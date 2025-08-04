@@ -714,7 +714,6 @@
 //* Function arguments
 //* =================================================
 //  A function argument is a value that you provide when you call a function. Arguments are passed into a function to fill the parameters defined in the function declaration.
-
 //? syntax:
 //? functionName(argument1, argument2, ...);
 
@@ -785,3 +784,87 @@
 // })(5,6);
 
 
+// ================================ECMAScript 2015/ES6 =====================================
+// in 1996 javascript is created
+// in 1997=> ECMAScript internationals it was then submitted for standandization which resulted in ESCAScript.
+
+// in 2015/ES6 decided to switch to annual releases of ECMAscript.
+
+// /* ==============================
+// //* Features of ES6
+// //* =============================
+
+// 1) let and const 
+// 2) template literals(Strings)
+// 3) defalt arguments.
+// 4) arrow functions.
+// 5) Destructuring.
+// 6) Object Properties
+// 7) Rest operator.
+// 8) spead operator.
+
+
+// 1) -----------------------let and const------------------------- 
+
+
+
+// /* ==============================
+// //* let and const
+// //* =============================
+
+// let => the let keyword is used to declared as block scope variable declared with let are mutable ,meaning their values can be ressinged.
+// var a=10;
+// a=20;console.log(a);
+
+// let a=10;
+// a=20; console.log(a);
+
+
+
+// const keyword=> the const keyword is used to declared variables with the block scope. it cannot be reassingned ,const variable are immutable.
+// const a=10;
+// a=20;        //reassingment is not possible in const.
+// console.log(a);
+
+//  using var keyword
+// var 
+// if (true) {
+//   var name = "vinod";
+//   console.log(name);
+// }
+// name = "technical";
+// console.log(name);
+  
+// let
+// if (true) {
+//   let name = "vinod";
+// //   console.log(name);
+// }
+// // name = "technical";
+// console.log(name);       //not access outside the block
+
+// const
+// if(true){
+//     const  name="vikash";
+//     console.log(name);
+// }
+// console.log(name);
+// // 
+
+
+// 2)---------------------template literals----------------
+
+// /* ==============================
+// //* template literals
+// //* =============================
+
+// /? In ECMAScript 6 (ES6), template strings, also known as template literals, provide a convenient and flexible way to create strings in JavaScript. Template strings are enclosed in backticks (``) rather than single or double quotes.
+
+
+
+let firstName="vinod ";
+let lastName="thapa";
+
+// let fullName=firstName+lastName;
+let fullName=`${firstName} ${lastName};`
+console.log(fullName);
