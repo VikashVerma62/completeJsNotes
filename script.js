@@ -862,9 +862,145 @@
 
 
 
-let firstName="vinod ";
-let lastName="thapa";
+// let firstName="vinod ";
+// let lastName="thapa";
 
-// let fullName=firstName+lastName;
-let fullName=`${firstName} ${lastName};`
-console.log(fullName);
+// // let fullName=firstName+lastName;
+// let fullName=`${firstName} ${lastName};`
+// console.log(fullName);
+
+// let age=20;
+// let message=`my age is ${age}`
+// console.log(message);
+
+// String iterpolation
+//? String Interpolation:  Template strings support string interpolation, allowing you to embed expressions directly within the string. Interpolated expressions are enclosed in ${}
+
+// let num=5;
+// let ans=`5*${num}=${5*num}`
+// console.log(ans);
+
+
+
+//  ==============================
+// //* advantages of template literals
+// //* =============================
+//  Readability: Template strings make the code more readable, especially for complex string constructions.
+
+//? Conciseness: They eliminate the need for explicit string concatenation and reduce the use of escape characters.
+
+//? Expression Flexibility: Any JavaScript expression can be embedded within ${}.
+
+//? Multi-line Support: Creating multi-line strings is more straightforward.
+
+
+// 3) -------------------defalt parameter------------------
+//  ==============================
+// //* default parameter
+// //* =============================
+
+//? In ECMAScript 6 (ES6), default parameters were introduced, providing a more concise way to handle function parameter defaults. Default parameters allow you to specify default values for function parameters in the function declaration itself. If a parameter is not provided when the function is called, the default value is used.
+// function sum(a=10,b=10){
+//     return a+b;
+
+// }
+// let ans=sum(20,20);
+// console.log(ans);
+
+
+
+// function sum(a,b){
+//     return a+b;
+// }
+// let ans=sum(10);
+// console.log(ans);   //if we give two parameter and pass only one argument than it gives NaN.
+
+// 4)------------------------------------- fat arrow functions----------------------------------------------------------
+//  ==============================
+// //* Fat Arrow Funtions
+// //* =============================
+
+
+
+// /? In ECMAScript 6 (ES6), arrow functions, also known as fat arrow functions, were introduced as a concise way to write anonymous functions.
+
+
+// this is your traditional function
+// let add=function(a,b){
+//     return a+b;
+// }
+// let ans=add(10,29);
+// console.log(ans)
+
+
+
+// syntax of fat arrow function
+
+// let add=(parameter1,parameter2...)=>{
+
+// }
+
+// todo NOTES
+// //?🚀 1: If the function body consists of a single expression, the braces {} and the return keyword can be omitted.
+// const sum=(a,b)=>`the sum is ${a+b}`
+// console.log(sum(10,20));
+
+
+
+// //? 🚀 2: If there is only one parameter, the parentheses () around the parameter list can be omitted.
+// const square = (a) => `The square of ${a} is  ${a * a}`;
+// console.log(square(5));
+
+
+// //? 🚀 3: If there are no parameters, use an empty set of parentheses ().
+// const greet = () => console.log("Plz LIKE SHARE & SUBSCRIBE!");
+// greet();
+
+
+
+
+// //  ==============================
+// //* interview questions
+// //* =============================
+
+
+//! Question 1: Calculator Function
+//! Write a JavaScript function calculator that takes two numbers and an operator as parameters and returns the result of the operation. The function should support addition, subtraction, multiplication, and division.
+
+// function calculator(num1,num2,operater){
+//     let result;
+// switch(operater){
+//     case "+":
+//       result=  num1+num2 ;
+//         return result;
+
+//     case "-":
+//     result=    num1-num2;
+//         return result;
+
+//         case "*":
+//            result= a*b;
+//            return result;
+//             case "/":
+//             result=  a/b;
+//                 return result;
+
+// }
+// }
+// console.log(calculator(5,6,"+"))
+// //! Reverse a String:
+// //! Write a function to reverse a given string without using built-in reverse methods.
+
+// let isReverse=(str)=>{
+//     let reverse='';
+//     for(let char=str.length-1; char>=0; char--){
+//         reverse=reverse+ str[char];
+//     }
+//     return reverse;
+// }
+// console.log(isReverse("vinod thapa"));
+
+// //! Palindrome Check:
+// //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
+
+
