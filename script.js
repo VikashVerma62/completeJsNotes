@@ -3,6 +3,8 @@
 
 
 
+
+
 // variables naming conventions;
 
 
@@ -1003,4 +1005,164 @@
 // //! Palindrome Check:
 // //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
 
+
+
+
+
+
+
+
+
+
+
+
+
+//=========================================== ARRAYS IN JAVASCRIPT=====================================================
+
+// //  ==============================
+// //*  ARRAYS IN JS
+// //* =============================
+
+
+
+
+// JAVASCRIPT array is an object that represents a collection of similiar type of elements.
+// each value(name) will be called as an element of an array.
+
+// in array each Element is represented by index  which starts with zero. and we can access each elements by using indexes.
+
+// first element or head element=> refers to the element at index 0;
+// last element or tail => refers to the last element which can obtained using array.lenght-1;
+
+
+// const persons=["ram","hari","sita","bishal","gita"];
+
+// persons[-1]='hariom';   this gives an error
+
+// persons.at(-1)="hariom"; // this method starts from last index of an array.
+
+
+// ECMScript 2022 also introduces new.at() method in array which helps of index last element too easily.
+
+
+// / //  ==============================
+// //*  TOPICS TO BE COVERED
+// //* =============================
+
+// 1) Creating array/ accessing elements/modifying elements.
+// 2) how to Insert ,Add,Replace and Delete elements in array(CRUD);
+// 3) Fileter in an array.
+// 4) very important array methods.
+// 5) Array traversal/iterating over arrays.
+// 6) searching in Array.
+// 7) how to sort and compare an array.
+
+
+// / //  ==============================
+// //*  CREAT ELEMENTS IN ARARAY
+// //* =============================
+
+// /? Arrays in JavaScript can be created using the Array constructor or with array literals (square brackets []).
+
+//? Using Array constructor
+
+// let fruits=new  Array('apple','banana','orange');
+// console.log(fruits);
+
+//? Using array literal
+
+
+// let array=["ram","hari","sita","gita"];
+// console.log(array);
+
+//? we can also create an empty array
+// let array=[]
+
+
+// / //  ==============================
+// //*  ACCESSING ELEMENTS IN ARRAY
+// //* =============================
+
+// Accessing elements using zero based indexing.
+
+// let fruits=["apple",'banana','orange'];
+// console.log(fruits[0]);
+
+
+//* ======================================
+//*  Modifying Elements:
+//* =====================================
+//?👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.
+
+// let fruits=["apple",'banana','orange'];
+// fruits[2]="mango";
+// console.log(fruits)
+
+
+//* =============================================
+//*  Array Traversal / Iterating Over Arrays
+//* ============================================
+
+//?👉 Array Traversal / Iterating Over Arrays k              
+//? 1: for of loop , also known as iterable
+//* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
+ 
+
+// let fruits=["apple",'banana','orange',"graps","mango"];
+// for(let items of fruits){
+//     console.log(items);
+// }
+
+//? 2: for in loop
+//* for...in Loop: The for...in loop is used to iterate over the properties (including indices) of an object.
+// for in loop is use to find print the index of array
+
+// let array=["apple","banana","orange","graps","mango"];
+// for(let items in array){
+//     console.log(items);
+// }
+
+
+// ? 3: forEach Method
+//* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
+
+// syntax  of forEach loop
+
+//  array.forEach(function callback(currentValue,index,array){
+// //your logic here
+// }.thisValue);
+
+// array.forEach((currentValue,index,array)=>{
+
+// your logic here 
+
+    // },thisValue)
+
+
+// array:array on which the foreach method is called.
+// callback: A function that will be called once for each element in the array.
+// current value:the current element being proccesed in the array.
+// index (optional):the index of the current element being proccessed.
+// array:(optinal):the array foreach is called upon.
+// thisvalue(optinal):a value of use this when executing the callback function
+
+
+
+// ? 4: map function
+//* map() creates a new array from calling a function for every array element. map() does not change the original array.
+
+// array.map(function callback(currentValue,index,array){
+// //your logic here
+// }.thisValue);
+
+// array.map((currentValue,index,array)=>{
+// //your logic here
+// }.thisValue);
+
+
+let fruits=["apple","banana","orange","graps","mango"];
+fruits.forEach((currElem,index,arr)=>{
+    console.log(`${currElem} ${index}`);
+    console.log(arr);
+})
 
