@@ -1450,11 +1450,11 @@ let fruits = ["apple", "orange", "banana", "mango"];
 // Q1: using the map method ,Write a function that takes an array of string and return a new array where each string is capatillized.
 
 
- const words = ["Banana", "Apple", "Orange", "Mango"];
- const result=words.map((currElem)=>{
-    return currElem.toUpperCase();
- })
- console.log(result);
+//  const words = ["Banana", "Apple", "Orange", "Mango"];
+//  const result=words.map((currElem)=>{
+//     return currElem.toUpperCase();
+//  })
+//  console.log(result);
 
 
 //  Q2: Using the map method, Write a function that takes an array of number and return a new array where  each number is squared but if it is an even number;
@@ -1482,8 +1482,276 @@ let fruits = ["apple", "orange", "banana", "mango"];
 
 
 
-const productPrice=[100,200,300,400,500];
-const totalPrice=productPrice.reduce((accum,currElem)=>{
-        return accum+currElem;
-},0)
-console.log(totalPrice);
+// const productPrice=[100,200,300,400,500];
+// const totalPrice=productPrice.reduce((accum,currElem)=>{
+//         return accum+currElem;
+// },0)
+// console.log(totalPrice);
+
+
+
+
+
+
+
+
+
+
+// ==========================================STRINGS IN JAVASCRIPT======================================================
+
+
+//* =========================================
+//*  STRINGS IN JS
+//* =========================================
+
+
+// Strings are the fundamental data type that represents a squence of characters.
+
+// note: string created with single and double quates work as same.
+// there is no difference in these two.
+
+/* =========================================
+//*  string properties
+//* =============================== */
+// const str="hello world";
+// console.log(str.length);
+
+
+
+
+//* =========================================
+//*  ESCAPE CHARACTER
+//* =========================================
+
+//          code       result         description
+//          \'          '               single quote
+//           \"          "               double quote
+//            \\         \                backslash
+
+
+// let text="my name is 'thapa technical ' i am a full stack developer";
+// console.log(text);
+// let text='my name is "thapa technical "i am a full stack developer';
+// console.log(text);
+
+
+
+let text1="my name is \" thapa technical\" and i am a \'full stack\' developer";
+// console.log(text1);
+
+
+//  /?1: indexOf Method: The indexOf method returns the first index (position) of the first occurance of a string in a string   or -1 if the string is not found
+// syntax
+// indexOf(searchElement);
+// indexOf(searchElement, fromIndex);
+
+// let text="vinod thapa";
+// console.log(text.indexOf("thapa"));
+
+
+
+
+// the Array.from() method returns an array from any object with legth property.
+// let strArr=Array.from(text);
+// console.log(strArr);
+// let maparr=strArr.map((currElem,index)=>{
+//   return  `${currElem}--> ${index}`
+
+// })
+// console.log(maparr)
+
+
+
+
+// ? 2: lastIndexOf Method: The lastIndexOf() method returns the index of the last occurence of a specified text in a string.
+// let text2 ="hello javascript,welcome to the world best javascript course";
+// let index=text2.indexOf("javascript");
+// let index1=text2.lastIndexOf("javascript");
+// console.log(index);
+// console.log(index1)
+
+// 3: search method searches a string for a string (for a regular expression )and returnig the position of the match.
+
+// let text="hello javascript,welcome to the world best javascript course";
+// let result=text.search("hiii");
+// console.log(result);
+
+// important points=> the search() method cannot take a second start argument.
+// the indexOf cannot take powerfull seach value (regular expression).
+
+// they accept the same arguments (parameter) and return the same value.
+
+// 4: returns an array of the matched values or null if no match found.
+
+// here the js coverts the normal text into regular expressions text match(/javasript/) without the global flag.
+
+
+
+// let text="hello javascript,welcome to the world best javascript course";
+
+// let result=text.match("javascript");
+// console.log(result);                //print the result in the form an array.
+
+
+
+// 5: matchAll():returns an itrator of all matches provided information about each match.returns an empty itarator if no match found.
+
+
+// here the js coverts the normal text into regular expressions text match(/javasript/) at the end.
+// let text="hello javascript,welcome to the world best javascript course";
+
+// let matchResult="javascript";
+
+// for(let item of matchResult){
+//     console.log(item[0]);
+// }
+
+
+
+// 6: includes():returns true if the string contains the specified value and false otherwise.
+// this  is also case sensitive 
+
+
+// let text="hello javascript,welcome to the world best javascript course";
+// let result=text.includes("j");
+// console.log(result);
+
+
+
+// 7: startsWith(): startsWith method returns true if a string begins with specified value. otherwise return false.
+
+// let text="hello javascript,welcome to the world best javascript course";
+// let result=text.startsWith("welcome");
+// console.log(result);
+
+// start position for the search element can be specified.
+
+
+// 8: endsWith(): the endsWith method return true if a string ends with a specified value ,otherwise it return false.
+// let text="hello javascript,welcome to the world best javascript course";
+// let result=text.endsWith("course");
+// console.log(result);
+
+
+
+
+
+
+//* =========================================
+//*  EXTRACTING STRING PARTS
+//* =========================================
+
+
+// slice(): extract a part of string and return a extract part in a  new string
+
+// slice(start ,end)
+
+// todo javascript count position from 0.
+// first position is 0 and last position is 1.
+
+// the last index is not includs by the slice method.
+
+// let text="hello javascript,welcome to the world best javascript course";
+// let result=text.slice(6);  //all the words after the 6th index
+// console.log(result);
+// let result1=text.slice(6,15) // starts with 6 and ends with 14 because last index is not includes.
+// console.log(result1);
+
+
+
+// substring : same as slice method 
+
+// similarties: in both the slice and substring methods,the end parameter idicates the ending index up to which the extraction occurs but the character at the end index is excludes from the extracted string 
+
+
+
+//interview questions
+// what is the output the following course.
+
+// let text="hello javascript,welcome to the world best javascript course";
+
+// let result=text.slice(1);
+// console.log(result);
+// let result=text.replace("h", "vi")
+// console.log(result);
+// let result=text.substring(1);
+// console.log(result);
+
+
+
+//* =========================================
+//*  EXTRACTING STRING PARTS
+//* =========================================
+// there are there methods to extacting string character
+
+// the charAt(position) method
+// the charCodeAt(position) method
+// the at(position) method
+
+
+// the charAt:method returns the character at specific position in a string
+
+
+// let text="hello javascript,welcome to the world best javascript course";
+// let result=text.charAt(6);
+// console.log(result);
+// let result=text.charAt(-6);    //gives an empty string.
+// console.log(result);
+
+
+
+// charCodeAt():the charCodeAt method return the code of the character at a spefied index in a string. the method returs a UTF 16 (an integer between 0 to 65335)
+
+// let text="hello javascript,welcome to the world best javascript course";
+// let result=text.charCodeAt(6);
+// console.log(result);
+
+
+// todo ES2022 the string at method is introduced 
+
+// the at method returns the character at a specified index in a string , the at method returs same as charAt
+
+
+
+
+//* =========================================
+//* REPLACING STRING CONTENT
+//* =========================================
+
+
+// replace(): the replace method used to replace a specified value with another value.
+
+
+// Case insensitive replacement to perform a case insensitive replacement you can use the i flag in the regular expression 
+// let originalString="hello world! how are you world";
+// let replaceString=originalString.replace(/world/gi,"vinod");
+// console.log(replaceString);
+
+
+
+// other important methods.
+// trim(): remove whitespace from the both end of the string.
+// let str="     hello world";
+// console.log(str.length);
+
+// let trimstr=str.trim();
+// console.log(trimstr.length);
+
+// split method: split the string into an array of substring based on a specified delimeter.
+// const str = "apple,banana,Guava";
+// let strArr=str.split(".");
+// console.log(strArr);
+
+
+
+
+//* =========================================
+//* INTERVIEW QUESTIONS    
+//* =========================================
+
+// Q1 Print all the alphabat from a to z
+// for(let char=97; char<=122; char++){
+//     console.log(String.fromCharCode(char));
+// }
+
+// Q2: write a function to check if all vowels are present in a string or not?
