@@ -1755,3 +1755,194 @@ let text1="my name is \" thapa technical\" and i am a \'full stack\' developer";
 // }
 
 // Q2: write a function to check if all vowels are present in a string or not?
+// const countVowel=(str)=>{
+//     const vowel="aeiou";
+//     let count =0;
+//     for(let char of str){
+//         // console.log(char);
+//         if(vowel.includes(char)){
+//             count++;
+//         }
+        
+//     }
+//     return count;
+// }
+
+// console.log(countVowel("hello a e i o u world"));
+
+// Q3: write a function to check if vowels present in a string or not.
+// const checkAllVowelPresentOrNot=(str)=>{
+// const vowels="aeiou";
+// for(let char of vowels){
+//     if(!str.includes(char)){
+//         return false;
+//     }
+// }
+// return true;
+// }
+// console.log(checkAllVowelPresentOrNot("my name  is vinod thapa"));
+
+
+// Q4:write a javascript function if the given string is pegram or not.
+// const pangramChecker=(str)=>{
+//     let inputArr=str.toLowerCase().split("");
+//     console.log(inputArr);
+// }
+// console.log(pangramChecker("the quick brown for fox jumps over the lazy dog"));
+
+
+
+
+
+// =================================================MATH OBJECT IN JS=========================================================================
+
+
+
+
+//* =========================================
+//*1. MATH OBJECT IN JS    
+//* =========================================
+
+
+// math namespace object contains static properties and mehod for mathmatical constrants and fuctions.
+// math works with number type it does not work with bigInt.
+
+// constrants.
+// Math.PI :represents the mathmatical constrant pi 
+const pi=Math.PI;
+console.log(pi);
+
+
+
+// difference between Round, Floor and Cial.
+
+
+// Math.round();
+
+// rouds to the nearest integer.
+console.log(Math.round(4.5)); //5
+console.log(Math.round(4.1));   //4
+
+// Math.floor()
+
+//  always rounds down to the nereast integer.
+console.log(Math.floor(4.9));   //4 gives floor or lower values 
+console.log(Math.floor(4.1));     //4 
+
+// Math.ceil
+
+// Always rounds up the nereast upper integer value.
+console.log(Math.ceil(4.1));  //5
+console.log(Math.ceil(4.9));   //5
+
+
+
+
+//* =========================================
+//* 2.BASIC OPERATIONS.
+//* =========================================
+
+
+//1. Math.abs() :
+// the method returns the absolute value of Number.
+
+// or in simple how far for the number is from 0. it will be always positive.
+
+console.log(Math.abs(5.4));
+console.log(Math.abs(-115));
+
+//2. Math.round();
+
+// rouds to the nearest integer.
+console.log(Math.round(4.5)); //5
+console.log(Math.round(4.1));   //4
+
+//3. Math.floor()
+
+//  always rounds down to the nereast integer.
+console.log(Math.floor(4.9));   //4 gives floor or lower values 
+console.log(Math.floor(4.1));     //4 
+
+//4. Math.ceil
+
+// Always rounds up the nereast upper integer value.
+console.log(Math.ceil(4.1));  //5
+console.log(Math.ceil(4.9));   //5
+
+
+// 5.Math.tranc():
+// Always returs the integer part of a number
+
+
+console.log(Math.trunc(4.5));    //4
+console.log(Math.trunc(5.0))     //5
+
+
+
+
+//* =========================================
+//* 2.Exponential and logrithmic funtions.
+//* =========================================
+
+
+// 1. Math.pow(x,y);
+    //   x**y 
+
+
+    // Math.pow(X ,Y): returns the value of x to the powew of y.
+
+    console.log(Math.pow(2,3));
+    console.log(2**3);
+
+    // 2.  Math.sqrt(): 
+
+    // this returns the square root x 
+    let squreRoot=Math.sqrt(25);
+    console.log(squreRoot);
+
+
+    //   3. Math.log(x):returns the natural logrithm of x.
+    let logResult=Math.log(1);
+    let logResult1=Math.log(2);
+    console.log(logResult);
+    console.log(logResult1);
+
+
+    // 4. Math.Random(): this returns the value between 0 to 1.
+
+    console.log((Math.random()*100).toFixed(2));
+
+
+
+
+
+
+
+    // ==========================================================Windows in js=================================================================
+        
+
+    //------------------------------------------------------------- Window--------------------------------------------------------------
+    // 1.window is the main container or we can say that global object and any operations related to the entire browser window can be the part or window object.
+    // 2. All the member like object method and propeties. if they are the part of winodw object. then we do not refer the window object.
+    //3.  window has object method and properties ex setTimeout and setInterval are method whereas the document is the object of the window and it is also a screen object with property discribing the physical display.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // -------------------------------------document ----------------------------------------------------------------------------
+    // 1.whereas dom is the child of the winow object.
+    // 2. where in the dom we pefer the document. if we want to use document object or properties.
+    //   3.Document is just the object of the global object which Window which deals with the document html element themselve.
+
