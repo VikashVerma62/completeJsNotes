@@ -1946,3 +1946,5 @@ console.log(Math.trunc(5.0))     //5
     // 2. where in the dom we pefer the document. if we want to use document object or properties.
     //   3.Document is just the object of the global object which Window which deals with the document html element themselve.
 
+
+      

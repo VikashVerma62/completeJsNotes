@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>Simple todo App</h1>
+     <div id="todoListElem"></div>
+     <input type="text" id="inputfield">
+     <button class="btn">click me </button>
+     <script>
+        let inputElem=document.getElementById("inputfield");
+        let btn=document.querySelector(".btn");
+        let todoElem=document.querySelector("#todoListElem");
+        btn.addEventListener("click",function(){
+            let pEleme=document.createElement("p");
+            pEleme.innerHTML=inputElem.value;
+            todoElem.appendChild(pEleme);
+
+            inputElem.value="";
+
+        })
+
+        todoElem.addEventListener("click",function(){
+            let currElem=event.target;
+            currElem.remove();
+        })
+     </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Best JS Course</h1>
+    <p>DOM Tree Structure</p>
+  </body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Best JS Course</title>
+   
+    
+  </head>
+  <body>
+    
+
+
+    <!-- dom searching -->
+ 
+      <div>
+        <h1 id="heading">DOM API </h1>
+        <ul class="list-of-nodes">
+
+          <li>1 node </li>
+          <li>2 node </li>
+          <li>3 node  </li>
+          <!-- node 4 -->
+          <li>4 node </li>
+          <li style="display: none;">5 node</li>
+        </ul>
+      </div>
+    
+    <script>
+      let findelementbyidname=document.getElementById("#heading");
+      let findelementbyclassname =document.getElementsByClassName('list-of-nodes');
+      console.log(findelementbyclassname)
+      for(let item of findelementbyclassname){
+        console.log(item.innerHTML);
+        console.log(item.innerText);
+        console.log(item.textContent);
+      }
+      let tageName=document.getElementsByTagName("li");
+      for(let elem of tageName){
+        console.log(elem);
+      }
+
+      let queryselector=document.querySelector("#heading");
+      console.log(queryselector);
+
+      let queryselectorall=document.querySelectorAll('li');
+      queryselectorall.forEach((currElem)=>{
+        console.log(currElem);
+      })
+
+    </script>
+  </body>
+</html>
