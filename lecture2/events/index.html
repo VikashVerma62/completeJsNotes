@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start inline event -->
+    <h1 id="heading1">inline event</h1>
+    <div id="div1">
+        <button class="btn" onclick="alert('welcome')">Greeting</button>
+        <button class="btn" ondblclick="alert('welcome to js course')">Greeting again</button>
+        <button class="btn" onmouseover="alert('welcome')">Greeting</button>
+    </div>
+    <!-- End inline event -->
+
+    <!-- start Dom event handler -->
+
+    <h1 id="heading2">Dom event handler</h1>
+    <div id="div2">
+        <button class="btn" id="btn1">Greeting</button>
+        <button class="btn" id="btn2">Greeting again</button>
+    </div>
+    <!-- end dom event handler -->
+
+
+
+
+
+    <h1 id="heading3">addEventListner event handler</h1>
+    <div id="div3">
+        <button class="btn">Greeting</button>
+        <button class="btn">Greeting again</button>
+    </div> 
+
+    <script>
+        document.getElementById("btn1").onclick = function() {
+        alert("welcome");
+        }
+        // document.getElementById("btn2").ondblclick=function(){
+        //     alert("welcome to js")
+        // }
+
+        document.getElementById("btn2").addEventListener("click",function(){
+            alert("hyyyyy");
+        })
+
+    </script>
+</body>
+</html>
