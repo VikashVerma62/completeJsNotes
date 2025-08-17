@@ -12,8 +12,9 @@
         <div id="mainDiv">
             <input type="text" id="inputvalue">
             <button class="btn"> Add todo </button>
+            <section id="todo-list-element"></section>
         </div>
-        <section id="todo-list-element"></section>
+        
     </form> 
 
 
@@ -31,6 +32,7 @@
     <li>${inputvalue.value}</li>
     <button class="deteleBtn">Delete</button> `
     mainTodoElem.appendChild(divElement);
+    inputvalue="";
 
          }
 
