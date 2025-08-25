@@ -9,40 +9,40 @@
 //* ==============================
 //? There are several ways to create objects in JavaScript. The most common one is using object literals:
 
-const product={
-    id:1,
-    pName:"laptop"
+// const product={
+//     id:1,
+//     pName:"laptop"
 
-}
+// }
 
 
-let person={
-    name:"vinod",
-    age:30,
-    isStudent:false,
-    greet:function(){
-   console.log("hello everyone");
-    }
+// let person={
+//     name:"vinod",
+//     age:30,
+//     isStudent:false,
+//     greet:function(){
+//    console.log("hello everyone");
+//     }
 
-}
+// }
 
-let person1={
-     name:"vinod",
-    age:30,
-    "is'Student":false,
-    greet:function(){
-   console.log("hello everyone");
-    }
-}
+// let person1={
+//      name:"vinod",
+//     age:30,
+//     "is'Student":false,
+//     greet:function(){
+//    console.log("hello everyone");
+//     }
+// }
 
 //* ==============================
 //* Accessing Properties:
 //* ==============================
 //? You can access object properties using dot notation or square bracket notation:
-console.log(person1.name)
-console.log((person1.age))
-console.log(person1["is'Student"]);
-console.log(person1[`is'Student`]);
+// console.log(person1.name)
+// console.log((person1.age))
+// console.log(person1["is'Student"]);
+// console.log(person1[`is'Student`]);
 
 
 
@@ -52,10 +52,10 @@ console.log(person1[`is'Student`]);
 //? You can add new properties or modify existing ones:
 
 
-person1.job="web dev";
-// person1.age=18;
-person1["age"]=12;
-console.log(person1);
+// person1.job="web dev";
+// // person1.age=18;
+// person1["age"]=12;
+// console.log(person1);
 
 
 
@@ -64,24 +64,24 @@ console.log(person1);
 //* =================================
 //? Methods in objects are functions associated with the object. They can be invoked using the same notation as properties:
 
-person1.greet();
+// person1.greet();
 
 //* ========================================
 //* We can add dynamic keys in an object
 //* ========================================
 
-let idType="studentId";
+// let idType="studentId";
 
-let student={
-    [idType]:"A12334",
-    sName:"vinod",
-    isStudent:true,
-    greet: function(){
-console.log(`hey my ${idType} is ${student[idType]} and my name is ${student.sName}`)
-    }
-}
+// let student={
+//     [idType]:"A12334",
+//     sName:"vinod",
+//     isStudent:true,
+//     greet: function(){
+// console.log(`hey my ${idType} is ${student[idType]} and my name is ${student.sName}`)
+//     }
+// }
 
-student.greet();
+// student.greet();
 
 //* =================================
 //* Data Modeling:
@@ -93,15 +93,15 @@ student.greet();
 
 
 
-let car={
-    brand:"Toyota",
-    model:"carmy",
-    year:2022,
-    start:function(){
-        console.log("engine started");
-    }
+// let car={
+//     brand:"Toyota",
+//     model:"carmy",
+//     year:2022,
+//     start:function(){
+//         console.log("engine started");
+//     }
 
-}
+// }
 
 
 //* =====================================
@@ -112,10 +112,10 @@ let car={
 //? sol: In JavaScript, primitive data types like numbers and strings are passed by value, while objects are passed by reference.
 //? Passing by value: When passing by value, a copy of the primitive value is created and passed to the function or assigned to a variable. Any changes made to the copy do not affect the original value.
 
-let a = 10;
-const modifyValue=(x)=>(x=20);
-console.log(modifyValue(a));
-console.log(a);
+// let a = 10;
+// const modifyValue=(x)=>(x=20);
+// console.log(modifyValue(a));
+// console.log(a);
 
 //? Passing by reference: When passing by reference, a reference to the memory location of the object is passed to the function or assigned to a variable. Any changes made to the object through this reference will affect the original object.
 
@@ -134,12 +134,12 @@ console.log(a);
 //? Object.assign() is used to copy properties from one or more source objects to a target object.
 
 
-let obj={id:1,name:'kodify'}
- let ob1={id:2,name:'thapa technical'};
+// let obj={id:1,name:'kodify'}
+//  let ob1={id:2,name:'thapa technical'};
 
-//  let newobj=Object.assign({},obj,ob1);
- let newobj={...obj,...ob1}
- console.log("original",newobj);
+// //  let newobj=Object.assign({},obj,ob1);
+//  let newobj={...obj,...ob1}
+//  console.log("original",newobj);
 
 
 
@@ -151,11 +151,11 @@ let obj={id:1,name:'kodify'}
 //? Independent objects (even if they look alike) are not equal:
 
 
-let obj1={name:"vinod"}
-let obj2={name:"vinod"};
+// let obj1={name:"vinod"}
+// let obj2={name:"vinod"};
 
-const isEqual=ob1===obj2?true:false;
-console.log(isEqual);
+// const isEqual=ob1===obj2?true:false;
+// console.log(isEqual);
 
 
 
@@ -166,21 +166,21 @@ console.log(isEqual);
 
 //?JSON is a data interchange format derived from JavaScript objects. Objects can be easily converted to JSON and vice versa.
 
- let student1 = {
-  id: 1,
-  sName: "Vinod",
-  sAge: 29,
-  isStudent: false,
-  greet: function () {
-    console.log(
-      `hey my id is ${student.identity} & my name is ${student.sName}`
-    );
-  },
-};
-let JSONData=JSON.stringify(student1);    //consvert the object into json
-console.log(JSONData);
-let parseObject=JSON.parse(JSONData);
-console.log(parseObject);
+//  let student1 = {
+//   id: 1,
+//   sName: "Vinod",
+//   sAge: 29,
+//   isStudent: false,
+//   greet: function () {
+//     console.log(
+//       `hey my id is ${student.identity} & my name is ${student.sName}`
+//     );
+//   },
+// };
+// let JSONData=JSON.stringify(student1);    //consvert the object into json
+// console.log(JSONData);
+// let parseObject=JSON.parse(JSONData);
+// console.log(parseObject);
 
 
 
@@ -218,3 +218,111 @@ function callme() {
 
 // * Regular Function Expression:
                   
+
+//* In this example, the greet method is defined using the "Method Shorthand" syntax. It's a more concise way to define methods in object literals.
+const obj = {
+  name: "Kodyfier",
+  greet() {
+    console.log(this);
+  },
+};
+
+obj.greet();
+
+
+const ob1={
+  name:"thapa technical",
+  greet:()=>{
+    console.log(this);
+
+  }
+}
+ob1.greet();
+
+//* =====================================
+//* Objects Useful Methods
+//* ======================================
+
+const product={
+  id:1,
+  name:"laptop",
+  category:"Computers",
+  brand:"Example Brand",
+  price:999.99,
+  stock:50,
+  description: "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
+//   image: "image link will be added during projects",
+}
+
+
+//? 1: Object.keys(): Returns an array containing the names of all enumerable own properties of an object
+
+let keys=Object.keys(product);
+console.log(keys);
+
+
+//? 2: Object.values(): Returns an array containing the values of all enumerable own properties of an object.
+let values=Object.values(product);
+console.log(values);
+
+
+//? 3: Object.entries(): Returns an array containing arrays of key-value pairs for each enumerable own property of an object.
+let entries=Object.entries(product);
+console.log(entries);
+
+//? 4: Object.hasOwnProperty(): Returns a boolean indicating whether the object has the specified property as an own property.
+console.log(product.hasOwnProperty("name"))    //true
+console.log(product.hasOwnProperty("isStudent"))   //false
+
+
+//? 5: Object.assign(): Copies the values of all enumerable own properties from one or more source objects to a target object.
+
+const target={a:1,b:4};
+const source={b:3,c:5};
+const mergeObject=Object.assign(target,source);
+console.log(mergeObject);
+
+
+//? 6: Object.freeze(): Freezes an object, preventing new properties from being added to it and existing properties from being modified or deleted.
+Object.freeze(product);
+product.id=2;
+console.log(product);
+
+
+
+
+//* =====================================
+//* Interview Question - Objects
+//* ======================================
+
+//! 1: What will be the output?
+
+// const target = { a: 1, b: 2 };
+// const source = { b: 3, c: 4 };
+
+// const mergedObject = Object.assign({}, target, source);
+// console.log(mergedObject);
+
+
+
+//! Problem: Given an object representing a student, write a function to add a new subject with its corresponding grade to the student's record. Also check if the grades property is present or not?
+
+let student = {
+  name: "Bob",
+  age: 20,
+  grades: {
+    math: 90,
+    science: 85,
+    history: 88,
+  },
+};
+const addStudentGrade=(student,subject,marks)=>{
+  if(!student.grades){
+    grades={};
+  }
+return  student.grades[subject]=marks;
+}
+
+addStudentGrade(student,"computer",92);
+console.log(student);
+
