@@ -1,0 +1,136 @@
+Basics =>
+What is CSS?
+ CSS rule structure
+ How to use CSS in html?
+ Types of Selectors?
+ Comments in CSS
+ Colors & Background Prop.
+ CSS Units & Dimensions
+ Fonts & Text Properties
+ CSS Box Model 
+Border, Padding & Margin
+ CSS Display, Floats etc..
+ CSS Positions & Z-index
+ CSS Overflow
+
+
+
+ Advanced
+  CSS3 Gradients
+ CSS3 Shadows & Filters
+ CSS Combinators
+ CSS Pseudo Class & Element
+ CSS3 Column Layout
+ CSS3 Flexbox & Grid 
+CSS3 Animations , Transform
+ Transitions & Perspective
+ CSS Specificity & Prefixes
+ CSS Media & Cont. Queries
+ CSS BEM, SMACSS etc..
+ CSS3 Variables, Nesting etc..
+ New CSS3 Features & Bonus 
+
+pro level
+ 50+Interview Questions
+ 30+ Tips & Tricks
+ Complete Notes + Codes
+ 100+ Animated Slides
+ 10+ Animated Projects
+ PROJECT – Complete Multipage WEBSITE  Using HTML & CSS💖
+ CSSPerformance and  Optimization
+ SEO + Testing + LIVE 
+HOSTING (free & Paid)
+
+
+what is css 
+Cascading style sheets(CSS):is a stylesheet language used to describe the look & presentation of a document written in html or xml. it defines how elements are displayed on a web page.
+ css makes website visually appealing and user friendly.
+
+   how to code in css
+   h1{
+    color:red;
+    font-size:32px
+   }
+
+
+   ==========================================================================
+
+   craetors and maintanance of css
+   Css was created by a group of individuals known as the world wide web consortium(W3C).
+   primary contributors include hakon wium lie and bert bos.
+   Css standards and specifications are maintained by the W3C.
+   A community of web developers designers and browser vendors also contributes to its evolution.
+   Regular updates and new versions ensure css ramains relavent and adapdatable to changing web design needs.
+    
+
+=================================================================================
+css history(versions)
+
+css1(1916)=> limited properties and Selectors.
+css2(1998)=> css2 was released and work on css3 began.
+
+css2.1(2011)=> css2.1 was released which fixed the errors found in css2
+ ==============================================================================
+ css rule structure
+ A css rule consist of a Selectors and declaration block.
+ Each declaration consist of propety and a value.
+
+ Selector{
+    propety :value;
+
+ more properties and values
+ }
+
+ h1<==selector {
+    propety=>color:red;<==value
+    font-size:22px;
+
+ }                                                          
+ =======================================================================================================================
+ how to use the css in html
+   3 ways 
+inline css: style applied  directly to an html Element using the style attribute 
+
+internal css:styles defind within the <style> tag within the html document <head>
+
+external css: styles stored in seprate css file linked to the html document using the link element. 
+
+====================================================================================================================
+css Selectors
+css tag/element selector
+h1{
+    color: red;
+}
+
+class selector=>
+.btn{
+    color:blue;
+    font-weight:bold;
+}
+
+id selector 
+#btn{
+    color:blue;
+
+}
+
+pseudo selector
+a:hover{
+    color:blue;
+    font-weight:bold;
+}
+
+=====================================================================================================================
+css Comments =>(/* This is a comment */)
+
+=====================================================================================================================
+
+Background properties in css
+1: Background-color;
+2: Background-image;
+3: Background-repeat;
+4: Background-position;
+5:Background-size;
+6:Background-attachment;
+
+

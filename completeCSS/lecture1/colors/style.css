@@ -1,0 +1,72 @@
+/** ------------------------------------- -->
+/**  COLORS IN CSS  
+/** ---------------------------------------- -->
+
+
+/* color using multiple notations */
+/*?Named colors :you can use named colors, which are predefing color keyword;*/
+ 
+/* h1{
+    color: red;
+}
+p{
+    color: blue;
+}
+ */
+
+/* ?RGB colors(Red ,Green ,Blue) */
+
+h1{
+    color: rgb(255, 0, 0);
+}
+p{
+    color: rgb(0,0,255);
+}
+
+/* ?RGBA colors:RGBA is similar to RGB but includes an alpha channel for opacity control. */
+h1{
+    color: rgba(255,0,0,1 );
+}
+
+/*? hexadecimal => you can specifies colors using hexadecimal values*/ 
+h1{
+    color: #ff0000;
+}
+
+/*?HSL=>(Hue Suration Lightness)  values provide a way to specify color based on their hue saturation and lightness */
+
+p{
+    color:hsl(226,84%,50%);
+}
+
+
+/*? HSLA colors: similiar to HSL, HSLA includes an alpha channel for opacity control.  */
+p{
+    color: hsl(226,84%,50%,0.8);
+}
+
+
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS  
+/** ---------------------------------------- -->
+
+/*? 1: What is the difference between rgb() and rgba() color notations in CSS? */
+/* rgb() notation specifies a color using the red, green, and blue channels without transparency.
+rgba() notation is an extension of rgb() and includes an additional alpha channel to specify transparency. It stands for "red, green, blue, alpha.  */
+
+/*? 2: How can you make the text color of an element fully transparent using CSS? Provide an example. */
+h1{
+  /* color: rgba(255, 0, 0, 0); */
+  /* color: transparent; */
+}
+
+/*? 3: How can you set the text color of an element to match the current color of another CSS property within the same element? */
+
+.hero-section {
+  color: rgb(17, 104, 212);
+}
+
+p {
+  color: currentColor;
+}
