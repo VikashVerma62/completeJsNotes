@@ -2,8 +2,22 @@
 /**  BACKGROUND PROPERTY IN CSS  
 /** ---------------------------------------- -->
 
+
+/*!1):background-color:  */
+/*!2): background-image  */
+/* !3): background-repeat */
+/*!4): background-position */
+/* !5):background-size:  */
+/* !6):background-attachment: */
+
+
+
+
 /*? background-color: Sets the background color of an element.
 Example: background-color: #FF5733; */
+body{
+   background-color: red;
+}
 
 /*? background-image: Specifies an image to be used as the background. */
 /* Example: background-image: url('image.jpg'); */
@@ -37,7 +51,7 @@ Example: background-blend-mode: multiply; */
     background-image: url('https://sp.yimg.com/ib/th/id/OIP.kAVFR1wudHm-yLiW9RHhNAHaJ4?pid=Api&w=148&h=148&c=7&rs=1'); 
     background-repeat: no-repeat;
     /* background-size: cover; */
-    background-position: top right;
+    background-position: center right;
  }
  h1{
     font-size: 2rem;
