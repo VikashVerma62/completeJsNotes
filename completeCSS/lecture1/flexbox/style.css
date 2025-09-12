@@ -129,6 +129,46 @@ body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   font-size: 24px;
 }
-.item2{
-    /* align-self: center; */
-}
+
+
+/** ------------------------------------- -->
+/**  INTERVIEW QUESTIONS IN CSS
+/** ---------------------------------------- --> */
+
+/*? 1: How do you center a div or text both horizontally and vertically using Flexbox? ⭐⭐⭐⭐⭐ */
+/* To center items horizontally, you can use justify-content: center; on the flex container. */
+/* To center items vertically, you can use align-items: center; on the flex container. */
+
+/* .item {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to right top, #004d7a, #00bf72, #a8eb12);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 1.6rem;
+    flex: auto;
+  } */
+
+/* Here I will show them first how to center the text inplace of grid  */
+/* then delete the 3 div and let it be one and centering that div  */
+
+/*? 2: How do you reorder flex items without changing their HTML structure? */
+/* You can use the order property on flex items. Lower values move items to the beginning of the container, while higher values move items to the end. */
+
+/*? 3: Create a vertical navigation menu using Flexbox where the menu items are centered both horizontally and vertically within the container. */
+/* <div class="menu">
+  <div class="menu-item">Home</div>
+  <div class="menu-item">About</div>
+  <div class="menu-item">Services</div>
+</div> */
+/* .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+} */
